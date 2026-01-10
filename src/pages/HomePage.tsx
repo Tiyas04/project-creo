@@ -3,7 +3,7 @@ import { AnimatePresence } from 'framer-motion'
 import Hero from '@/components/hero/Hero'
 import Preloader from '@/components/ui/Preloader'
 import ApplySection from '@/components/applySection'
-import Footer from '@/components/marginals/footer/Footer'
+import Footer from '@/components/marginals/footer'
 import NavBar from '@/components/marginals/navbar/NavBar'
 
 export default function HomePage() {

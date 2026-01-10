@@ -1,5 +1,5 @@
 import Hero from '@/components/hero/Hero'
-import Footer from '@/components/footer/Footer'
+import Footer from '@/components/marginals/footer'
 import PlaygroundContent from '@/components/ui/playground'
 import ApplySection from '@/components/applySection'
 
