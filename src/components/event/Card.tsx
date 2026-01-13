@@ -32,7 +32,7 @@ const Card = () => {
         </div>
         {/* 2 */}
         <div className='relative z-5 md:h-full md:max-h-full md:max-w-[90%] max-w-[76.5%] flex flex-col gap-2 justify-between items-start p-4 sm:px-6  md:px-12 md:py-6.4 text-white'>
-          <p className='text-base md:text-[24px] md:mt-4 font-gabarito text-white'>Know to more</p>
+          <p className='text-base md:text-[24px] md:mt-4 font-gabarito text-white'>Know more</p>
           <h2 className='text-[24px] sm:text-[28px] md:text-[45.9px] font-fort max-w-4xl leading-tight mb-6 md:mb-8 uppercase tracking-wide drop-shadow-lg text-white'>
             Rules and Regulations to get you started
           </h2>
