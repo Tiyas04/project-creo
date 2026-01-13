@@ -1,10 +1,11 @@
 import { ArrowDownToLine } from 'lucide-react'
-import { CARD_BG_1, CARD_BG_2 } from '@/assets/imgs/event'
+import { CARD_BG_1 } from '@/config/event'
 import { Link } from 'react-router-dom'
+import { toast } from 'sonner'
 
 const Card = () => {
   return (
-    <div className='py-10 md:py-40'>
+    <div className='w-full'>
       <div className='relative w-full max-w-[90%] sm:max-w-[95%] md:max-w-[89%] mx-auto min-h-48 md:h-100 overflow-hidden rounded-xl '>
         {/* 1 */}
         <div className='absolute inset-0 bg-[#030223] opacity-92 mix-blend-hard-light z-1'></div>
@@ -22,15 +23,7 @@ const Card = () => {
             }}
           />
         </div>
-        <div
-          className='absolute inset-0 bg-cover bg-center z-0 mix-blend-hard-light opacity-39'
-          style={{
-            backgroundImage: `url('${CARD_BG_2}')`,
-          }}
-        >
-          <div className='absolute inset-0 bg-linear-to-r from-black/40 to-transparent' />
-        </div>
-        {/* 2 */}
+
         <div className='relative z-5 md:h-full md:max-h-full md:max-w-[90%] max-w-[76.5%] flex flex-col gap-2 justify-between items-start p-4 sm:px-6  md:px-12 md:py-6.4 text-white'>
           <p className='text-base md:text-[24px] md:mt-4 font-gabarito text-white'>Know more</p>
           <h2 className='text-[24px] sm:text-[28px] md:text-[45.9px] font-fort max-w-4xl leading-tight mb-6 md:mb-8 uppercase tracking-wide drop-shadow-lg text-white'>
@@ -38,11 +31,12 @@ const Card = () => {
           </h2>
 
           <Link
-            to={{
-              pathname: '/',
+            to={'#'}
+            onClick={() => {
+              toast.info('Coming Soon..')
             }}
-            target='_blank'
-            rel='noopener noreferrer'
+            // target='_blank'
+            // rel='noopener noreferrer'
             className='flex items-center justify-between gap-3 bg-[#030223] px-5 sm:px-8 py-3 md:px-16 md:py-5 w-fit text-white hover:bg-[#030223]/80 transition-all cursor-pointer border-white border-2 md:mb-4'
           >
             <span className='leading-normal md:leading-7 font-inter text-[14px] sm:text-[18px] md:text-[31px] font-bold'>

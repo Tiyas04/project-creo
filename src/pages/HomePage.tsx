@@ -6,6 +6,10 @@ import ApplySection from '@/components/applySection'
 import Footer from '@/components/marginals/footer'
 import NavBar from '@/components/marginals/navbar/NavBar'
 import { About } from '../components/about/About'
+import { FAQSection } from '@/components/faq'
+import EventDetails from '@/components/event/EventDetails'
+
+import Card from '@/components/event/Card'
 
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true)
@@ -23,6 +27,13 @@ export default function HomePage() {
       <Hero />
       <About />
       <ApplySection />
+      <EventDetails />
+      <div className='relative z-20 -mt-20 md:-mt-32 -mb-28 md:-mb-40 w-full pointer-events-none flex justify-center'>
+        <div className='w-full pointer-events-auto'>
+          <Card />
+        </div>
+      </div>
+      <FAQSection />
       <Footer />
     </main>
   )
