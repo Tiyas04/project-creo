@@ -1,18 +1,17 @@
 import { Button } from '../ui/button'
-import { H4, P } from '../ui/typography'
-import Line from './Line'
+import { H2, P } from '../ui/typography'
 import { registerFn } from '@/utils/registerFn'
 
 interface cardProps {
   heading: string
-  tillDate: string
+  info: string
   price: number
   cardType: 'Early' | 'Regular'
   isActive: boolean
   onHover: () => void
 }
 
-function ApplyCard({ heading, tillDate, price, isActive, onHover }: cardProps) {
+function ApplyCard({ heading, price, info, isActive, onHover }: cardProps) {
   return (
     <div
       className={`relative flex flex-col flex-wrap text-white h-full md:h-[270px] transition-all duration-500 ease-in-out z-40 overflow-hidden rounded-[13px] backdrop-blur-sm ${
@@ -32,21 +31,22 @@ function ApplyCard({ heading, tillDate, price, isActive, onHover }: cardProps) {
       />
 
       <div className='relative z-10 flex flex-col p-5 pb-2'>
-        <H4 className='flex flex-col font-fort'>{heading}</H4>
-        {/* <P className='mt-0!'>{tillDate}</P> */}
+        <H2 className='flex flex-col font-fort border-0 whitespace-nowrap'>{heading}</H2>
       </div>
 
-      <div className=' my-2'>
+      {/* <div className=' my-2'>
         <Line />
-      </div>
+      </div> */}
 
-      <div className='relative z-10 flex flex-col p-5 pt-2'>
-        <div className='flex gap-3 items-baseline'>
+      <div className='relative z-10 flex flex-col flex-1 p-5 pt-2'>
+        <P className='mt-0!  '>{info}</P>
+
+        <div className='flex gap-3 items-baseline md:mb-0 mb-10'>
           <P className='text-4xl font-semibold'>₹{price}</P>
           <P>Per person</P>
         </div>
         <Button
-          className='self-start bg-black mt-10 px-5 py-5 border cursor-pointer hover:bg-zinc-900 transition-colors rounded-none text-[1.15rem]'
+          className='self-start bg-black mt-auto px-5 py-5 border cursor-pointer hover:bg-zinc-900 transition-colors rounded-none text-[1.15rem]'
           onClick={registerFn}
         >
           Register now

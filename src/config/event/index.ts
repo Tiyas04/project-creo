@@ -46,4 +46,4 @@ export const EVENT_DETAILS = [
 ]
 
 export const BROCHURE_LINK =
-  'https://drive.google.com/file/d/1mCRX8B4mKXPIJdEdAtD9obNX8XbpQctw/view?usp=sharing'
+  'https://drive.google.com/uc?export=download&id=1mCRX8B4mKXPIJdEdAtD9obNX8XbpQctw'

@@ -1,4 +1,4 @@
-import { H4, P } from '../ui/typography'
+import { H2, P } from '../ui/typography'
 import Line from './Line'
 
 interface cardProps {
@@ -28,7 +28,7 @@ function PrizesPerksCard({ heading, isActive, onHover }: cardProps) {
       />
 
       <div className='relative z-10 flex flex-col p-5 pb-2'>
-        <H4 className='flex flex-col font-fort'>{heading}</H4>
+        <H2 className='flex flex-col font-fort border-0 whitespace-nowrap'>{heading}</H2>
       </div>
 
       <div className=' my-2'>

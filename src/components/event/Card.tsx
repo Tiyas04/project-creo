@@ -1,6 +1,5 @@
 import { ArrowDownToLine } from 'lucide-react'
 import { CARD_BG_1, BROCHURE_LINK } from '@/config/event'
-import { Link } from 'react-router-dom'
 
 const Card = () => {
   return (
@@ -31,8 +30,8 @@ const Card = () => {
             Rules and Regulations to get you started
           </h2>
 
-          <Link
-            to={BROCHURE_LINK}
+          <a
+            href={BROCHURE_LINK}
             target='_blank'
             rel='noopener noreferrer'
             className='flex items-center justify-between gap-3 bg-[#030223] px-5 sm:px-8 py-3 md:px-16 md:py-5 w-fit text-white hover:bg-[#030223]/80 transition-all cursor-pointer border-white border-2 md:mb-4'
@@ -41,7 +40,7 @@ const Card = () => {
               Download PDF
             </span>
             <ArrowDownToLine className='w-5 h-5 md:w-7 md:h-7 ' />
-          </Link>
+          </a>
         </div>
       </div>
     </div>
