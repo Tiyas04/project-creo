@@ -7,7 +7,7 @@ const HeroInfo = () => {
       </div>
       <div>
         <p className='text-xs font-gabarito uppercase tracking-widest mb-1'>Destination</p>
-        <p className='text-lg font-bold font-fort'>NIT ROURKELA</p>
+        <p className='text-lg font-bold font-fort'>REMOTE</p>
       </div>
       <div>
         <p className='text-xs font-gabarito uppercase tracking-widest mb-1'>Duration</p>
